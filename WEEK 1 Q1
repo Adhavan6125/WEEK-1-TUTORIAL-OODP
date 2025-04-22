@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1, num2, product, count = 0;
+
+    cin >> num1 >> num2;
+
+    product = num1 * num2;
+
+    int temp = product;
+    if (temp == 0) {
+        count = 1;
+    } else {
+        while (temp != 0) {
+            count++;
+            temp /= 10;
+        }
+    }
+
+    cout << "Product - " << product << endl;
+    cout << "Count of digits - " << count << endl;
+
+    return 0;
+}
