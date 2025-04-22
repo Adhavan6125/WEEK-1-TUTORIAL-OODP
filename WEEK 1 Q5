@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double a = 45.6789;
+    double b = 0.00034567;
+    int c = 255;
+    double d = 987.654321;
+    double e = -123.456;
+
+    // a. Right-justified with 3 decimal places in width 10
+    cout << setw(10) << fixed << setprecision(3) << a << endl;
+
+    // b. Scientific notation with 6 decimal places
+    cout << scientific << setprecision(6) << b << endl;
+
+    // c. Hexadecimal in uppercase
+    cout << hex << uppercase << c << endl;
+
+    // d. Fixed-point with 4 decimal places
+    cout << fixed << setprecision(4) << d << endl;
+
+    // e. Exponential with 4 decimal places
+    cout << scientific << setprecision(4) << e << endl;
+
+    return 0;
+}
